@@ -29,6 +29,10 @@ internal class TV
                 int numberOfChannel = Convert.ToInt32(Console.ReadLine());
                 MoveToChannel(numberOfChannel);
             }
+            else if (answer > 4 || answer < 0)
+            {
+                Console.WriteLine("\nЧисло не является ни одним из пунктов программы!\n");
+            }
         }
         while (answer != 4);
     }
